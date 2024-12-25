@@ -1,4 +1,4 @@
-load "../subprocess.ring"
+load "subprocess.ring"
 
 see "Random Programming Quotes Example"
 see "=============================="
