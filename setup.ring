@@ -7,12 +7,6 @@ func main
     try {
         cDir = CurrentDir()
         
-        # Check required files
-        if not Fexists("ringsubprocess.zip") or not Fexists("ringsubprocessdll.zip")
-            ? "! Error: Package files not found"
-            return
-        ok
-        
         # Extract library files
         ? "Extracting files: ringsubprocess.zip and ringsubprocessdll.zip"
         
@@ -24,7 +18,7 @@ func main
         ok
 
         # Extract DLL files
-        chdir("../bin")
+        chdir(exefolder() + "../bin")
         if Fexists("ringsubprocessdll.zip")
             zip_extract_allfiles("ringsubprocessdll.zip",".")
             remove("ringsubprocessdll.zip")
