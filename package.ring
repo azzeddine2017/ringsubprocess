@@ -1,5 +1,5 @@
 aPackageInfo = [
-	:name = "The ringsubprocess Package",
+	:name = "ringsubprocess",
 	:description = "A powerful subprocess management extension for the Ring programming language that provides a simple interface for creating and managing system processes.",
 	:folder = "ringsubprocess",
 	:developer = "Azzeddine Remmal",
@@ -22,8 +22,6 @@ aPackageInfo = [
 	],
 	:files = 	[
 		"main.ring",
-		"bin/load/subprocess.ring",
-		"extensions/ringsubprocess/buildvc_x64.bat",
 		"extensions/ringsubprocess/example/example.ring",
 		"extensions/ringsubprocess/example/ffmpeg_processor.ring",
 		"extensions/ringsubprocess/example/gemini_chat.ring",
@@ -42,57 +40,16 @@ aPackageInfo = [
 		"setup.ring",
 		"uninstall.ring"
 	],
-	:ringfolderfiles = 	[
-		"bin/load/subprocess.ring",
-		"bin/ring_subprocess.zip",
-		"extensions/ringsubprocess.zip",
+	:ringfolderfiles = [
+		"bin/load/subprocess.ring"
 	],
-	:windowsfiles = 	[
-
+	:windowsfiles = [
+		"extensions/ringsubprocess/buildvc_x64.bat",
+		"extensions/ringsubprocess/ring_subprocess.exp",
+		"extensions/ringsubprocess/ring_subprocess.ilk",
+		"extensions/ringsubprocess/ring_subprocess.lib",
+		"extensions/ringsubprocess/ring_subprocess.pdb"
 	],
-	:linuxfiles = 	[
-
-	],
-	:ubuntufiles = 	[
-
-	],
-	:fedorafiles = 	[
-
-	],
-	:macosfiles = 	[
-
-	],
-	:windowsringfolderfiles = 	[
-
-	],
-	:linuxringfolderfiles = 	[
-
-	],
-	:ubunturingfolderfiles = 	[
-
-	],
-	:fedoraringfolderfiles = 	[
-
-	],
-	:macosringfolderfiles = 	[
-
-	],
-	:run = "ring main.ring",
-	:windowsrun = "",
-	:linuxrun = "",
-	:macosrun = "",
-	:ubunturun = "",
-	:fedorarun = "",
 	:setup = "ring setup.ring",
-	:windowssetup = "",
-	:linuxsetup = "",
-	:macossetup = "",
-	:ubuntusetup = "",
-	:fedorasetup = "",
-	:remove = "ring uninstall.ring",
-	:windowsremove = "",
-	:linuxremove = "",
-	:macosremove = "",
-	:ubunturemove = "",
-	:fedoraremove = ""
+	:remove = "ring uninstall.ring"
 ]
