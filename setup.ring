@@ -1,3 +1,5 @@
+load "ziplib.ring"
+
 func main
 	? "Extracting File : ringsubprocess.zip and ringsubprocessdll.zip"
 	cDir = CurrentDir()
