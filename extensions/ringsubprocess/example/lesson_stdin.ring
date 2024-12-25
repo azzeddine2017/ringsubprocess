@@ -3,7 +3,7 @@
 # Author: Ring Team
 # ======================================================
 
-load "../subprocess.ring"
+load "subprocess.ring"
 
 
 # Example 1: Ring REPL
