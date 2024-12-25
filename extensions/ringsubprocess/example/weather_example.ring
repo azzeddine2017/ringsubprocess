@@ -1,4 +1,4 @@
-load "../subprocess.ring"
+load "subprocess.ring"
 load "jsonlib.ring"
 
 # Example: Fetch and display weather data using OpenWeatherMap API
