@@ -1,5 +1,3 @@
-load "ziplib.ring"
-
 func main
 	? "Extracting File : ringsubprocess.zip and ringsubprocessdll.zip"
 	cDir = CurrentDir()
@@ -12,5 +10,5 @@ func main
 	remove("ringsubprocessdll.zip")
 	chdir(cDir)
 
-	? "Ring Subprocess Extension has been installed successfully!" + nl
+	? "Ring Subprocess Extension has been installed successfully!"
 	system("ringpm run ringsubprocess")
