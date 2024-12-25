@@ -1,10 +1,10 @@
 load "stdlib.ring"
 
 func main
-	? "Removing Folder : ring/extensions/subprocess"
+	? "Removing Folder : ring/extensions/ringsubprocess"
 	cDir = CurrentDir()
 	chdir(exefolder()+"../extensions")
-	OSDeleteFolder("subprocess")
+	OSDeleteFolder("ringsubprocess")
 	chdir(cDir)
 
 	? "Removing dll : ring_subprocess.dll"
@@ -16,4 +16,3 @@ func main
 	chdir(exefolder()+"../bin/load")
 	remove("subprocess.ring")
 	chdir(cDir)
-
