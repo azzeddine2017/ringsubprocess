@@ -18,7 +18,7 @@ A powerful subprocess management extension for the Ring programming language tha
 
 ## Installation
 
-- clone `https://github.com/azzeddine2017/Ring-Sub-process-Extension.git` in folder ring/extensions
+- λ ringpm install ringsubprocess from Azzeddine2017
 
 ### Build Steps
 
