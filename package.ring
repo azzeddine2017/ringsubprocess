@@ -1,5 +1,5 @@
 aPackageInfo = [
-	:name = "ringsubprocess",
+	:name = "The ringsubprocess Package",
 	:description = "A powerful subprocess management extension for the Ring programming language that provides a simple interface for creating and managing system processes.",
 	:folder = "ringsubprocess",
 	:developer = "Azzeddine Remmal",
@@ -22,6 +22,8 @@ aPackageInfo = [
 	],
 	:files = 	[
 		"main.ring",
+		"bin/load/subprocess.ring",
+		"extensions/ringsubprocess/buildvc_x64.bat",
 		"extensions/ringsubprocess/example/example.ring",
 		"extensions/ringsubprocess/example/ffmpeg_processor.ring",
 		"extensions/ringsubprocess/example/gemini_chat.ring",
@@ -34,22 +36,67 @@ aPackageInfo = [
 		"extensions/ringsubprocess/example/youtube_example.ring",
 		"extensions/ringsubprocess/README.md",
 		"extensions/ringsubprocess/ring_subprocess.c",
+		"extensions/ringsubprocess/ring_subprocess.exp",
 		"extensions/ringsubprocess/ring_subprocess.h",
+		"extensions/ringsubprocess/ring_subprocess.ilk",
+		"extensions/ringsubprocess/ring_subprocess.lib",
+		"extensions/ringsubprocess/ring_subprocess.pdb",
 		"extensions/ringsubprocess/subprocess.ring",
 		"README.md",
 		"setup.ring",
 		"uninstall.ring"
 	],
-	:ringfolderfiles = [
-		"bin/load/subprocess.ring"
+	:ringfolderfiles = 	[
+		"bin/load/subprocess.ring",
+		"bin/ring_subprocess.zip",
+		"extensions/ringsubprocess.zip",
 	],
-	:windowsfiles = [
-		"extensions/ringsubprocess/buildvc_x64.bat",
-		"extensions/ringsubprocess/ring_subprocess.exp",
-		"extensions/ringsubprocess/ring_subprocess.ilk",
-		"extensions/ringsubprocess/ring_subprocess.lib",
-		"extensions/ringsubprocess/ring_subprocess.pdb"
+	:windowsfiles = 	[
+
 	],
+	:linuxfiles = 	[
+
+	],
+	:ubuntufiles = 	[
+
+	],
+	:fedorafiles = 	[
+
+	],
+	:macosfiles = 	[
+
+	],
+	:windowsringfolderfiles = 	[
+
+	],
+	:linuxringfolderfiles = 	[
+
+	],
+	:ubunturingfolderfiles = 	[
+
+	],
+	:fedoraringfolderfiles = 	[
+
+	],
+	:macosringfolderfiles = 	[
+
+	],
+	:run = "ring main.ring",
+	:windowsrun = "",
+	:linuxrun = "",
+	:macosrun = "",
+	:ubunturun = "",
+	:fedorarun = "",
 	:setup = "ring setup.ring",
-	:remove = "ring uninstall.ring"
+	:windowssetup = "",
+	:linuxsetup = "",
+	:macossetup = "",
+	:ubuntusetup = "",
+	:fedorasetup = "",
+	:remove = "ring uninstall.ring",
+	:windowsremove = "",
+	:linuxremove = "",
+	:macosremove = "",
+	:ubunturemove = "",
+	:fedoraremove = ""
 ]
