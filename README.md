@@ -18,7 +18,7 @@ A powerful subprocess management extension for the Ring programming language tha
 
 ## Installation
 
-- λ ringpm install ringsubprocess from Azzeddine2017
+- `ringpm install ringsubprocess from Azzeddine2017`
 
 ### Build Steps
 
