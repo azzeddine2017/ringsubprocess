@@ -6,12 +6,11 @@ func main
 	chdir(exefolder() + "../extensions")
 	zip_extract_allfiles("ringsubprocess.zip","ringsubprocess")
 	remove("ringsubprocess.zip")
-	chdir(cDir)
 
 	chdir(exefolder() + "../bin")
-	zip_extract_allfiles("ringsubprocessdll.zip","bin")
+	zip_extract_allfiles("ringsubprocessdll.zip",".")
 	remove("ringsubprocessdll.zip")
 	chdir(cDir)
 
-	? "Ring Subprocess Extension has been installed successfully!"
+	? "Ring Subprocess Extension has been installed successfully!" + nl
 	system("ringpm run ringsubprocess")
