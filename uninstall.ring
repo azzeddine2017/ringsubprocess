@@ -7,11 +7,11 @@ func main
         cDir = CurrentDir()
         
         # Remove library folder
-        ? "Removing folder: ring/extensions/subprocess"
-		
+        ? "Removing folder: ring/extensions/ringsubprocess"
+
         chdir(exefolder()+"../extensions")
-        if Direxists("subprocess")
-            OSDeleteFolder("subprocess")
+        if Direxists("ringsubprocess")
+            OSDeleteFolder("ringsubprocess")
             ? " Library folder removed successfully"
         else
             ? "! Library folder not found"
