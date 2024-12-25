@@ -20,12 +20,7 @@ A powerful subprocess management extension for the Ring programming language tha
 
 - `ringpm install ringsubprocess from Azzeddine2017`
 
-### Build Steps
 
-- Build the extension using the provided `buildvc_x64.bat` script:
-```batch
-buildvc_x64.bat
-```
 
 ## Usage
 
