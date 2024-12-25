@@ -1,4 +1,4 @@
-load "../subprocess.ring"
+load "subprocess.ring"
 
 ? "ProcessManager Example with Streams"
 ? "================================"
