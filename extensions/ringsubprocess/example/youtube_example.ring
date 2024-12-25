@@ -1,4 +1,4 @@
-load "../subprocess.ring"
+load "subprocess.ring"
 
 ? "YouTube Video Information Example using yt-dlp"
 ? "====================================="
