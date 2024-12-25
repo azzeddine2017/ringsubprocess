@@ -8,21 +8,13 @@ func main
         cDir = CurrentDir()
         
         # Extract library files
-        ? "Extracting files: ringsubprocess.zip and ringsubprocessdll.zip"
+        ? "Extracting files: ringsubprocess.zip "
         
         chdir(exefolder() + "../extensions")
         if Fexists("ringsubprocess.zip")
             zip_extract_allfiles("ringsubprocess.zip","ringsubprocess")
             remove("ringsubprocess.zip")
             ? " Library files extracted successfully"
-        ok
-
-        # Extract DLL files
-        chdir(exefolder() + "../bin")
-        if Fexists("ringsubprocessdll.zip")
-            zip_extract_allfiles("ringsubprocessdll.zip",".")
-            remove("ringsubprocessdll.zip")
-            ? " DLL files extracted successfully"
         ok
         
         chdir(cDir)
