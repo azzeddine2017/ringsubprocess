@@ -22,7 +22,6 @@ aPackageInfo = [
 	],
 	:files = 	[
 		"main.ring",
-		"bin/load/subprocess.ring",
 		"extensions/ringsubprocess/buildvc_x64.bat",
 		"extensions/ringsubprocess/example/example.ring",
 		"extensions/ringsubprocess/example/ffmpeg_processor.ring",
@@ -36,11 +35,7 @@ aPackageInfo = [
 		"extensions/ringsubprocess/example/youtube_example.ring",
 		"extensions/ringsubprocess/README.md",
 		"extensions/ringsubprocess/ring_subprocess.c",
-		"extensions/ringsubprocess/ring_subprocess.exp",
 		"extensions/ringsubprocess/ring_subprocess.h",
-		"extensions/ringsubprocess/ring_subprocess.ilk",
-		"extensions/ringsubprocess/ring_subprocess.lib",
-		"extensions/ringsubprocess/ring_subprocess.pdb",
 		"extensions/ringsubprocess/subprocess.ring",
 		"README.md",
 		"setup.ring",
@@ -48,7 +43,7 @@ aPackageInfo = [
 	],
 	:ringfolderfiles = 	[
 		"bin/load/subprocess.ring",
-		"bin/ring_subprocess.zip",
+		"bin/ring_subprocess.dll",
 		"extensions/ringsubprocess.zip",
 	],
 	:windowsfiles = 	[
