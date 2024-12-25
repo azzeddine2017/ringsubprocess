@@ -1,4 +1,4 @@
-load "../subprocess.ring"
+load "subprocess.ring"
 
 ? "Testing ProcessManager"
 
