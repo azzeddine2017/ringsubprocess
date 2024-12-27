@@ -5,11 +5,11 @@ aPackageInfo = [
 	:developer = "Azzeddine Remmal",
 	:email = "Azzeddine.Remmal@gmail.com",
 	:license = "MIT License",
-	:version = "1.0.0",
+	:version = "1.0.1",
 	:ringversion = "1.22",
 	:versions = 	[
 		[
-			:version = "1.0.0",
+			:version = "1.0.1",
 			:branch = "master"
 		]
 	],
@@ -22,6 +22,13 @@ aPackageInfo = [
 	],
 	:files = 	[
 		"main.ring",
+		"README.md",
+		"setup.ring",
+		"uninstall.ring"
+	],
+	:ringfolderfiles = 	[
+		"bin/load/subprocess.ring",
+		"bin/ring_subprocess.dll",
 		"extensions/ringsubprocess/buildvc_x64.bat",
 		"extensions/ringsubprocess/example/example.ring",
 		"extensions/ringsubprocess/example/ffmpeg_processor.ring",
@@ -37,14 +44,6 @@ aPackageInfo = [
 		"extensions/ringsubprocess/ring_subprocess.c",
 		"extensions/ringsubprocess/ring_subprocess.h",
 		"extensions/ringsubprocess/subprocess.ring",
-		"README.md",
-		"setup.ring",
-		"uninstall.ring"
-	],
-	:ringfolderfiles = 	[
-		"bin/load/subprocess.ring",
-		"bin/ring_subprocess.dll",
-		"extensions/ringsubprocess.zip",
 	],
 	:windowsfiles = 	[
 
