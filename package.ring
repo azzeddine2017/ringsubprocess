@@ -23,8 +23,7 @@ aPackageInfo = [
 	:files = 	[
 		"main.ring",
 		"README.md",
-		"setup.ring",
-		"uninstall.ring"
+		"setup.ring"
 	],
 	:ringfolderfiles = 	[
 		"bin/load/subprocess.ring",
@@ -87,7 +86,7 @@ aPackageInfo = [
 	:macossetup = "",
 	:ubuntusetup = "",
 	:fedorasetup = "",
-	:remove = "ring uninstall.ring",
+	:remove = "",
 	:windowsremove = "",
 	:linuxremove = "",
 	:macosremove = "",
