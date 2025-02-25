@@ -154,12 +154,3 @@ Contributions are welcome! Here are some ways you can contribute:
 2. Suggesting enhancements
 3. Adding new features
 4. Improving documentation
-
-## Future Enhancements
-
-Planned features for future releases:
-- Exit code retrieval
-- Asynchronous execution support
-- Standard input (stdin) redirection
-- Enhanced error handling
-- Cross-platform support improvements
