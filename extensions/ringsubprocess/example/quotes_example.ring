@@ -6,7 +6,12 @@ see "=============================="
 proc = new ProcessManager()
 
 # Using quotes.rest API - no API key needed
-command = 'powershell -command "Invoke-WebRequest -Uri https://api.quotable.io/random -UseBasicParsing | Select-Object -ExpandProperty Content"'
+command = NULL
+if isWindows()
+    command = 'powershell -command "Invoke-WebRequest -Uri http://api.quotable.io/random -UseBasicParsing | Select-Object -ExpandProperty Content"'
+else
+    command = 'curl -s http://api.quotable.io/random'
+ok
 
 see nl + "Fetching a random quote..."
 
