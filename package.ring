@@ -48,7 +48,7 @@ aPackageInfo = [
 
 	],
 	:linuxfiles = 	[
-
+		"lib/libring_subprocess.lib"
 	],
 	:ubuntufiles = 	[
 
