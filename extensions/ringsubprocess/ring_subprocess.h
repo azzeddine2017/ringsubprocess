@@ -2,14 +2,38 @@
 #define ring_subprocess_h
 
 #include "ring.h"
+#include <stdio.h>
+#include <fcntl.h>
+
+#ifdef _WIN32
 #include <windows.h>
+#include <io.h>
+#else
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <string.h>
+#include <errno.h>
+#include <signal.h>
+
+typedef pid_t HANDLE;
+typedef int DWORD;
+#endif
 
 // هياكل البيانات
-typedef struct SubProcess {
-    FILE *pipeHandle;      // للقراءة من stdout
-    FILE *stdinHandle;     // للكتابة إلى stdin
+typedef struct SubProcess
+{
+    FILE *pipeHandle;
+    FILE *stdinHandle;
+
+#ifdef _WIN32
     HANDLE hProcess;
     DWORD processId;
+#else
+    pid_t hProcess;
+    pid_t processId;
+#endif
+
     String *output;
 } SubProcess;
 
