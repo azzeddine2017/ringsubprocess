@@ -1,5 +1,9 @@
-if iswindows()
-loadlib("ring_subprocess.dll")
+if isWindows()
+    loadlib("ring_subprocess.dll")
+elseif isMacOSX()
+    loadlib("libring_subprocess.dylib")
+else
+    loadlib("libring_subprocess.so")
 ok
 
 Class ProcessManager {

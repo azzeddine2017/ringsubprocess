@@ -5,11 +5,11 @@ aPackageInfo = [
 	:developer = "Azzeddine Remmal",
 	:email = "Azzeddine.Remmal@gmail.com",
 	:license = "MIT License",
-	:version = "1.0.1",
+	:version = "1.0.5",
 	:ringversion = "1.22",
 	:versions = 	[
 		[
-			:version = "1.0.1",
+			:version = "1.0.5",
 			:branch = "master"
 		]
 	],
@@ -48,7 +48,7 @@ aPackageInfo = [
 
 	],
 	:linuxfiles = 	[
-
+		"lib/libring_subprocess.lib"
 	],
 	:ubuntufiles = 	[
 

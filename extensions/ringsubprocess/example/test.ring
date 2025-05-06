@@ -5,8 +5,14 @@ load "subprocess.ring"
 # Create new instance
 proc = new ProcessManager()
 
-? "Executing dir command"
-proc.runCommand("cmd.exe /c dir")
+if isWindows()
+	? "Executing dir command"
+	proc.runCommand("cmd.exe \c dir")
+else
+	? "Executing ls command"
+	proc.runCommand("ls")
+ok
+
 proc.waitForComplete()
 ? "Output:"
 ? proc.readOutput()
